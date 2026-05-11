@@ -1,0 +1,32 @@
+{
+  "agent_name": "value_agent",
+  "start_time": "2025-09-15T16:41:27.213124",
+  "start_timestamp": 1757925687.213126,
+  "input_data": {
+    "user_query": "分析一下百度",
+    "stock_code": null,
+    "company_name": "百度",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2025-09-15T16:41:56.140214",
+  "end_timestamp": 1757925716.140216,
+  "execution_time_seconds": 28.926957845687866,
+  "output_data": {
+    "value_analysis_length": 266,
+    "analysis_preview": "由于您提供的股票代码“Unknown”不符合Baostock API的格式要求（需为9位格式，如“sh.600000”或“sz.000001”），且百度（BIDU）为美股上市公司，当前工具仅支持中国A股市场数据查询，因此无法获取相关估值数据。\n\n**请确认以下信息后重新发起请求**：\n1. 若需分析A股公司，请提供正确的Baostock格式代码（如“sh.600xxx”或“sz.00xxxx”）；\n2. 若需分析百度（美股），当前工具暂不支持美股数据查询。\n\n（注：所有估值分析需基于有效A股代码进行，工具无法跨市场获取数据。）",
+    "llm_execution_time": 27.709584951400757,
+    "total_execution_time": 28.926957845687866
+  },
+  "success": true,
+  "error": null
+}

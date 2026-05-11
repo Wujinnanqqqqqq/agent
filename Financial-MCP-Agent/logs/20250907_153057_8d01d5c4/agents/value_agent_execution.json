@@ -1,0 +1,21 @@
+{
+  "agent_name": "value_agent",
+  "start_time": "2025-09-07T15:31:01.074961",
+  "start_timestamp": 1757230261.074962,
+  "input_data": {
+    "user_query": "分析比亚迪",
+    "stock_code": null,
+    "company_name": "比亚迪",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "started"
+}

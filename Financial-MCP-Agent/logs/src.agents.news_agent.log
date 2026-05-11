@@ -1,0 +1,307 @@
+2025-09-06 20:52:59 - src.agents.news_agent - INFO - 🔄 NewsAgent: Starting news analysis using ReAct framework.
+2025-09-06 20:52:59 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ChatOpenAI with model qwen3-235b-a22b
+2025-09-06 20:52:59 - src.agents.news_agent - INFO - 🔄 NewsAgent: Fetching MCP tools...
+2025-09-06 20:52:59 - src.agents.news_agent - INFO - ✓ NewsAgent: Successfully loaded 27 tools.
+2025-09-06 20:52:59 - src.agents.news_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-09-06 20:52:59 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ReAct agent...
+2025-09-06 20:52:59 - src.agents.news_agent - INFO - Agent input: 请对嘉友国际（股票代码：Unknown）进行新闻分析。
+
+当前时间：2025年09月06日 (2025-09-06) 星期六 20:52:58
+当前日期：2025-09-06
+
+请进行以下新闻分析：
+1. 爬取与嘉友国际相关的最新新闻（至少5条）
+2. 对每条新闻进行情感分析，评估新闻对公司的情感影响（1-5分：1=负面，2=轻微负面，3=中性，4=正面，5=极正面）
+3. 对每条新闻进行风险评估，评估新闻对公司的风险影响（1-5分：1=极低风险，2=低风险，3=中等风险，4=高风险，5=极高风险）
+4. 分析新闻对股价的潜在影响
+5. 识别关键新闻事件和趋势
+6. 提供基于新闻的综合投资建议
+
+请使用可用的工具获取实际新闻数据进行分析，确保情感分析和风险评估的准确性。如果某些新闻无法获取，请基于可用信息提供尽可能全面的分析。
+2025-09-06 20:52:59 - src.agents.news_agent - INFO - 🔄 NewsAgent: Calling ReAct agent...
+2025-09-06 20:53:00 - src.agents.news_agent - ERROR - ✗ NewsAgent: Error in MCP or agent execution: {'code': 'invalid_argument', 'message': "at '/properties': got array, want object", 'type': 'invalid_request_error'}
+Traceback (most recent call last):
+  File "/Users/wjn/Documents/agent/Finance/Financial-MCP-Agent/src/agents/news_agent.py", line 159, in news_agent
+    response = await agent.ainvoke(input_data)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/pregel/main.py", line 3112, in ainvoke
+    async for chunk in self.astream(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/pregel/main.py", line 2939, in astream
+    async for _ in runner.atick(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/pregel/_runner.py", line 295, in atick
+    await arun_with_retry(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/pregel/_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/_internal/_runnable.py", line 710, in ainvoke
+    input = await step.ainvoke(input, config, **kwargs)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/_internal/_runnable.py", line 467, in ainvoke
+    ret = await coro
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 655, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/runnables/base.py", line 3091, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/runnables/base.py", line 5454, in ainvoke
+    return await self.bound.ainvoke(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 1017, in agenerate_prompt
+    return await self.agenerate(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 975, in agenerate
+    raise exceptions[0]
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 1145, in _agenerate_with_cache
+    result = await self._agenerate(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_openai/chat_models/base.py", line 1415, in _agenerate
+    return await run_in_executor(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/runnables/config.py", line 617, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/runnables/config.py", line 608, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_openai/chat_models/base.py", line 1236, in _create_chat_result
+    raise ValueError(response_dict.get("error"))
+ValueError: {'code': 'invalid_argument', 'message': "at '/properties': got array, want object", 'type': 'invalid_request_error'}
+2025-09-06 20:53:34 - src.agents.news_agent - INFO - 🔄 NewsAgent: Starting news analysis using ReAct framework.
+2025-09-06 20:53:34 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ChatOpenAI with model qwen-max-longcontext
+2025-09-06 20:53:34 - src.agents.news_agent - INFO - 🔄 NewsAgent: Fetching MCP tools...
+2025-09-06 20:53:34 - src.agents.news_agent - INFO - ✓ NewsAgent: Successfully loaded 27 tools.
+2025-09-06 20:53:34 - src.agents.news_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-09-06 20:53:34 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ReAct agent...
+2025-09-06 20:53:34 - src.agents.news_agent - INFO - Agent input: 请对嘉友国际（股票代码：Unknown）进行新闻分析。
+
+当前时间：2025年09月06日 (2025-09-06) 星期六 20:53:33
+当前日期：2025-09-06
+
+请进行以下新闻分析：
+1. 爬取与嘉友国际相关的最新新闻（至少5条）
+2. 对每条新闻进行情感分析，评估新闻对公司的情感影响（1-5分：1=负面，2=轻微负面，3=中性，4=正面，5=极正面）
+3. 对每条新闻进行风险评估，评估新闻对公司的风险影响（1-5分：1=极低风险，2=低风险，3=中等风险，4=高风险，5=极高风险）
+4. 分析新闻对股价的潜在影响
+5. 识别关键新闻事件和趋势
+6. 提供基于新闻的综合投资建议
+
+请使用可用的工具获取实际新闻数据进行分析，确保情感分析和风险评估的准确性。如果某些新闻无法获取，请基于可用信息提供尽可能全面的分析。
+2025-09-06 20:53:34 - src.agents.news_agent - INFO - 🔄 NewsAgent: Calling ReAct agent...
+2025-09-06 20:54:29 - src.agents.news_agent - INFO - ReAct agent execution completed in 54.95 seconds
+2025-09-06 20:54:29 - src.agents.news_agent - INFO - Successfully extracted analysis from AI message.
+2025-09-06 20:54:29 - src.agents.news_agent - INFO - Final extracted analysis length: 1471 characters
+2025-09-06 20:54:29 - src.agents.news_agent - INFO - ✓ NewsAgent: Successfully completed news analysis.
+2025-09-06 21:22:00 - src.agents.news_agent - INFO - 🔄 NewsAgent: Starting news analysis using ReAct framework.
+2025-09-06 21:22:00 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ChatOpenAI with model qwen3-235b-a22b
+2025-09-06 21:22:00 - src.agents.news_agent - INFO - 🔄 NewsAgent: Fetching MCP tools...
+2025-09-06 21:22:01 - src.agents.news_agent - INFO - ✓ NewsAgent: Successfully loaded 27 tools.
+2025-09-06 21:22:01 - src.agents.news_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-09-06 21:22:01 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ReAct agent...
+2025-09-06 21:22:01 - src.agents.news_agent - INFO - Agent input: 请对嘉友国际（股票代码：Unknown）进行新闻分析。
+
+当前时间：2025年09月06日 (2025-09-06) 星期六 21:22:00
+当前日期：2025-09-06
+
+请进行以下新闻分析：
+1. 爬取与嘉友国际相关的最新新闻（至少5条）
+2. 对每条新闻进行情感分析，评估新闻对公司的情感影响（1-5分：1=负面，2=轻微负面，3=中性，4=正面，5=极正面）
+3. 对每条新闻进行风险评估，评估新闻对公司的风险影响（1-5分：1=极低风险，2=低风险，3=中等风险，4=高风险，5=极高风险）
+4. 分析新闻对股价的潜在影响
+5. 识别关键新闻事件和趋势
+6. 提供基于新闻的综合投资建议
+
+请使用可用的工具获取实际新闻数据进行分析，确保情感分析和风险评估的准确性。如果某些新闻无法获取，请基于可用信息提供尽可能全面的分析。
+2025-09-06 21:22:01 - src.agents.news_agent - INFO - 🔄 NewsAgent: Calling ReAct agent...
+2025-09-06 21:22:01 - src.agents.news_agent - ERROR - ✗ NewsAgent: Error in MCP or agent execution: {'code': 'invalid_argument', 'message': "at '/properties': got array, want object", 'type': 'invalid_request_error'}
+Traceback (most recent call last):
+  File "/Users/wjn/Documents/agent/Finance/Financial-MCP-Agent/src/agents/news_agent.py", line 159, in news_agent
+    response = await agent.ainvoke(input_data)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/pregel/main.py", line 3112, in ainvoke
+    async for chunk in self.astream(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/pregel/main.py", line 2939, in astream
+    async for _ in runner.atick(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/pregel/_runner.py", line 295, in atick
+    await arun_with_retry(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/pregel/_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/_internal/_runnable.py", line 710, in ainvoke
+    input = await step.ainvoke(input, config, **kwargs)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/_internal/_runnable.py", line 467, in ainvoke
+    ret = await coro
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 655, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/runnables/base.py", line 3091, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/runnables/base.py", line 5454, in ainvoke
+    return await self.bound.ainvoke(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 1017, in agenerate_prompt
+    return await self.agenerate(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 975, in agenerate
+    raise exceptions[0]
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 1145, in _agenerate_with_cache
+    result = await self._agenerate(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_openai/chat_models/base.py", line 1415, in _agenerate
+    return await run_in_executor(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/runnables/config.py", line 617, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/runnables/config.py", line 608, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_openai/chat_models/base.py", line 1236, in _create_chat_result
+    raise ValueError(response_dict.get("error"))
+ValueError: {'code': 'invalid_argument', 'message': "at '/properties': got array, want object", 'type': 'invalid_request_error'}
+2025-09-06 21:36:54 - src.agents.news_agent - INFO - 🔄 NewsAgent: Starting news analysis using ReAct framework.
+2025-09-06 21:36:54 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ChatOpenAI with model qwen1.5-110b-chat
+2025-09-06 21:36:54 - src.agents.news_agent - INFO - 🔄 NewsAgent: Fetching MCP tools...
+2025-09-06 21:36:55 - src.agents.news_agent - INFO - ✓ NewsAgent: Successfully loaded 27 tools.
+2025-09-06 21:36:55 - src.agents.news_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-09-06 21:36:55 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ReAct agent...
+2025-09-06 21:36:55 - src.agents.news_agent - INFO - Agent input: 请对腾讯（股票代码：Unknown）进行新闻分析。
+
+当前时间：2025年09月06日 (2025-09-06) 星期六 21:36:54
+当前日期：2025-09-06
+
+请进行以下新闻分析：
+1. 爬取与腾讯相关的最新新闻（至少5条）
+2. 对每条新闻进行情感分析，评估新闻对公司的情感影响（1-5分：1=负面，2=轻微负面，3=中性，4=正面，5=极正面）
+3. 对每条新闻进行风险评估，评估新闻对公司的风险影响（1-5分：1=极低风险，2=低风险，3=中等风险，4=高风险，5=极高风险）
+4. 分析新闻对股价的潜在影响
+5. 识别关键新闻事件和趋势
+6. 提供基于新闻的综合投资建议
+
+请使用可用的工具获取实际新闻数据进行分析，确保情感分析和风险评估的准确性。如果某些新闻无法获取，请基于可用信息提供尽可能全面的分析。
+2025-09-06 21:36:55 - src.agents.news_agent - INFO - 🔄 NewsAgent: Calling ReAct agent...
+2025-09-06 21:37:28 - src.agents.news_agent - INFO - ReAct agent execution completed in 32.72 seconds
+2025-09-06 21:37:28 - src.agents.news_agent - INFO - Successfully extracted analysis from AI message.
+2025-09-06 21:37:28 - src.agents.news_agent - INFO - Final extracted analysis length: 876 characters
+2025-09-06 21:37:28 - src.agents.news_agent - INFO - ✓ NewsAgent: Successfully completed news analysis.
+2025-09-06 22:01:55 - src.agents.news_agent - INFO - 🔄 NewsAgent: Starting news analysis using ReAct framework.
+2025-09-06 22:01:55 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ChatOpenAI with model qwen1.5-110b-chat
+2025-09-06 22:01:55 - src.agents.news_agent - INFO - 🔄 NewsAgent: Fetching MCP tools...
+2025-09-06 22:01:56 - src.agents.news_agent - INFO - ✓ NewsAgent: Successfully loaded 27 tools.
+2025-09-06 22:01:56 - src.agents.news_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-09-06 22:01:56 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ReAct agent...
+2025-09-06 22:01:56 - src.agents.news_agent - INFO - Agent input: 请对嘉友国际（股票代码：Unknown）进行新闻分析。
+
+当前时间：2025年09月06日 (2025-09-06) 星期六 22:01:55
+当前日期：2025-09-06
+
+请进行以下新闻分析：
+1. 爬取与嘉友国际相关的最新新闻（至少5条）
+2. 对每条新闻进行情感分析，评估新闻对公司的情感影响（1-5分：1=负面，2=轻微负面，3=中性，4=正面，5=极正面）
+3. 对每条新闻进行风险评估，评估新闻对公司的风险影响（1-5分：1=极低风险，2=低风险，3=中等风险，4=高风险，5=极高风险）
+4. 分析新闻对股价的潜在影响
+5. 识别关键新闻事件和趋势
+6. 提供基于新闻的综合投资建议
+
+请使用可用的工具获取实际新闻数据进行分析，确保情感分析和风险评估的准确性。如果某些新闻无法获取，请基于可用信息提供尽可能全面的分析。
+2025-09-06 22:01:56 - src.agents.news_agent - INFO - 🔄 NewsAgent: Calling ReAct agent...
+2025-09-06 22:06:05 - src.agents.news_agent - INFO - 🔄 NewsAgent: Starting news analysis using ReAct framework.
+2025-09-06 22:06:05 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ChatOpenAI with model qwen3-235b-a22b
+2025-09-06 22:06:05 - src.agents.news_agent - INFO - 🔄 NewsAgent: Fetching MCP tools...
+2025-09-06 22:06:06 - src.agents.news_agent - INFO - ✓ NewsAgent: Successfully loaded 27 tools.
+2025-09-06 22:06:06 - src.agents.news_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-09-06 22:06:06 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ReAct agent...
+2025-09-06 22:06:06 - src.agents.news_agent - INFO - Agent input: 请对嘉友国际（股票代码：Unknown）进行新闻分析。
+
+当前时间：2025年09月06日 (2025-09-06) 星期六 22:06:05
+当前日期：2025-09-06
+
+请进行以下新闻分析：
+1. 爬取与嘉友国际相关的最新新闻（至少5条）
+2. 对每条新闻进行情感分析，评估新闻对公司的情感影响（1-5分：1=负面，2=轻微负面，3=中性，4=正面，5=极正面）
+3. 对每条新闻进行风险评估，评估新闻对公司的风险影响（1-5分：1=极低风险，2=低风险，3=中等风险，4=高风险，5=极高风险）
+4. 分析新闻对股价的潜在影响
+5. 识别关键新闻事件和趋势
+6. 提供基于新闻的综合投资建议
+
+请使用可用的工具获取实际新闻数据进行分析，确保情感分析和风险评估的准确性。如果某些新闻无法获取，请基于可用信息提供尽可能全面的分析。
+2025-09-06 22:06:06 - src.agents.news_agent - INFO - 🔄 NewsAgent: Calling ReAct agent...
+2025-09-06 22:06:06 - src.agents.news_agent - ERROR - ✗ NewsAgent: Error in MCP or agent execution: {'code': 'invalid_argument', 'message': "at '/properties': got array, want object", 'type': 'invalid_request_error'}
+Traceback (most recent call last):
+  File "/Users/wjn/Documents/agent/Finance/Financial-MCP-Agent/src/agents/news_agent.py", line 159, in news_agent
+    response = await agent.ainvoke(input_data)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/pregel/main.py", line 3112, in ainvoke
+    async for chunk in self.astream(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/pregel/main.py", line 2939, in astream
+    async for _ in runner.atick(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/pregel/_runner.py", line 295, in atick
+    await arun_with_retry(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/pregel/_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/_internal/_runnable.py", line 710, in ainvoke
+    input = await step.ainvoke(input, config, **kwargs)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/_internal/_runnable.py", line 467, in ainvoke
+    ret = await coro
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 655, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/runnables/base.py", line 3091, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/runnables/base.py", line 5454, in ainvoke
+    return await self.bound.ainvoke(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 1017, in agenerate_prompt
+    return await self.agenerate(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 975, in agenerate
+    raise exceptions[0]
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 1145, in _agenerate_with_cache
+    result = await self._agenerate(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_openai/chat_models/base.py", line 1415, in _agenerate
+    return await run_in_executor(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/runnables/config.py", line 617, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+  File "/opt/anaconda3/envs/agent/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_core/runnables/config.py", line 608, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/agent/lib/python3.10/site-packages/langchain_openai/chat_models/base.py", line 1236, in _create_chat_result
+    raise ValueError(response_dict.get("error"))
+ValueError: {'code': 'invalid_argument', 'message': "at '/properties': got array, want object", 'type': 'invalid_request_error'}
+2025-09-07 15:31:01 - src.agents.news_agent - INFO - 🔄 NewsAgent: Starting news analysis using ReAct framework.
+2025-09-07 15:31:01 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ChatOpenAI with model doubao-seed-1.6
+2025-09-07 15:31:01 - src.agents.news_agent - INFO - 🔄 NewsAgent: Fetching MCP tools...
+2025-09-07 15:31:01 - src.agents.news_agent - INFO - ✓ NewsAgent: Successfully loaded 27 tools.
+2025-09-07 15:31:01 - src.agents.news_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-09-07 15:31:01 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ReAct agent...
+2025-09-07 15:31:01 - src.agents.news_agent - INFO - Agent input: 请对比亚迪（股票代码：Unknown）进行新闻分析。
+
+当前时间：2025年09月07日 (2025-09-07) 星期日 15:31:00
+当前日期：2025-09-07
+
+请进行以下新闻分析：
+1. 爬取与比亚迪相关的最新新闻（至少5条）
+2. 对每条新闻进行情感分析，评估新闻对公司的情感影响（1-5分：1=负面，2=轻微负面，3=中性，4=正面，5=极正面）
+3. 对每条新闻进行风险评估，评估新闻对公司的风险影响（1-5分：1=极低风险，2=低风险，3=中等风险，4=高风险，5=极高风险）
+4. 分析新闻对股价的潜在影响
+5. 识别关键新闻事件和趋势
+6. 提供基于新闻的综合投资建议
+
+请使用可用的工具获取实际新闻数据进行分析，确保情感分析和风险评估的准确性。如果某些新闻无法获取，请基于可用信息提供尽可能全面的分析。
+2025-09-07 15:31:01 - src.agents.news_agent - INFO - 🔄 NewsAgent: Calling ReAct agent...
+2025-09-07 15:34:39 - src.agents.news_agent - INFO - ReAct agent execution completed in 217.52 seconds
+2025-09-07 15:34:39 - src.agents.news_agent - INFO - Successfully extracted analysis from AI message.
+2025-09-07 15:34:39 - src.agents.news_agent - INFO - Final extracted analysis length: 2374 characters
+2025-09-07 15:34:39 - src.agents.news_agent - INFO - ✓ NewsAgent: Successfully completed news analysis.
+2025-09-15 16:41:27 - src.agents.news_agent - INFO - 🔄 NewsAgent: Starting news analysis using ReAct framework.
+2025-09-15 16:41:27 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ChatOpenAI with model doubao-seed-1.6
+2025-09-15 16:41:27 - src.agents.news_agent - INFO - 🔄 NewsAgent: Fetching MCP tools...
+2025-09-15 16:41:28 - src.agents.news_agent - INFO - ✓ NewsAgent: Successfully loaded 27 tools.
+2025-09-15 16:41:28 - src.agents.news_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-09-15 16:41:28 - src.agents.news_agent - INFO - 🔄 NewsAgent: Creating ReAct agent...
+2025-09-15 16:41:28 - src.agents.news_agent - INFO - Agent input: 请对百度（股票代码：Unknown）进行新闻分析。
+
+当前时间：2025年09月15日 (2025-09-15) 星期一 16:41:27
+当前日期：2025-09-15
+
+请进行以下新闻分析：
+1. 爬取与百度相关的最新新闻（至少5条）
+2. 对每条新闻进行情感分析，评估新闻对公司的情感影响（1-5分：1=负面，2=轻微负面，3=中性，4=正面，5=极正面）
+3. 对每条新闻进行风险评估，评估新闻对公司的风险影响（1-5分：1=极低风险，2=低风险，3=中等风险，4=高风险，5=极高风险）
+4. 分析新闻对股价的潜在影响
+5. 识别关键新闻事件和趋势
+6. 提供基于新闻的综合投资建议
+
+请使用可用的工具获取实际新闻数据进行分析，确保情感分析和风险评估的准确性。如果某些新闻无法获取，请基于可用信息提供尽可能全面的分析。
+2025-09-15 16:41:28 - src.agents.news_agent - INFO - 🔄 NewsAgent: Calling ReAct agent...
+2025-09-15 16:43:14 - src.agents.news_agent - INFO - ReAct agent execution completed in 106.10 seconds
+2025-09-15 16:43:14 - src.agents.news_agent - INFO - Successfully extracted analysis from AI message.
+2025-09-15 16:43:14 - src.agents.news_agent - INFO - Final extracted analysis length: 167 characters
+2025-09-15 16:43:14 - src.agents.news_agent - INFO - ✓ NewsAgent: Successfully completed news analysis.

@@ -1,0 +1,32 @@
+{
+  "agent_name": "technical_agent",
+  "start_time": "2025-09-15T16:41:27.212637",
+  "start_timestamp": 1757925687.212638,
+  "input_data": {
+    "user_query": "分析一下百度",
+    "stock_code": null,
+    "company_name": "百度",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2025-09-15T16:41:58.599695",
+  "end_timestamp": 1757925718.5997,
+  "execution_time_seconds": 31.386714935302734,
+  "output_data": {
+    "technical_analysis_length": 233,
+    "analysis_preview": "您提供的股票代码“Unknown”无效，根据工具要求，中国A股股票代码应为Baostock格式（例如：'sh.600000'，'sz.000001'），需包含市场标识（sh/sz）和6位数字。\n\n此外，百度（BIDU）是在纳斯达克上市的美股公司，目前提供的工具仅支持中国A股市场数据查询，无法获取美股信息。请您确认是否需要分析：\n1. 其他A股上市公司（需提供正确的Baostock格式代码）\n2. 调整分析范围至A股市场\n\n若需继续分析，请提供有效的A股股票代码。",
+    "llm_execution_time": 30.133725881576538,
+    "total_execution_time": 31.386714935302734
+  },
+  "success": true,
+  "error": null
+}

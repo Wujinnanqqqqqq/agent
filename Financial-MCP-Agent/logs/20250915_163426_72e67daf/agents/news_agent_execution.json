@@ -1,0 +1,32 @@
+{
+  "agent_name": "news_agent",
+  "start_time": "2025-09-15T16:41:27.212109",
+  "start_timestamp": 1757925687.212112,
+  "input_data": {
+    "user_query": "分析一下百度",
+    "stock_code": null,
+    "company_name": "百度",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2025-09-15T16:43:14.549546",
+  "end_timestamp": 1757925794.549549,
+  "execution_time_seconds": 107.33717799186707,
+  "output_data": {
+    "news_analysis_length": 167,
+    "analysis_preview": "由于多次尝试爬取百度（股票代码可能非A股格式或无近期公开新闻）相关新闻均未返回结果，推测可能因百度为美股上市企业（代码非A股格式）或近期无公开新闻披露。基于现有信息，无法完成新闻分析、情感评估及股价影响判断。建议：1. 确认股票代码是否为A股格式；2. 若需分析A股企业，可提供正确代码后重新查询；3. 当前无数据支持进一步投资建议。",
+    "llm_execution_time": 106.1019299030304,
+    "total_execution_time": 107.33717799186707
+  },
+  "success": true,
+  "error": null
+}

@@ -1,0 +1,32 @@
+{
+  "agent_name": "value_agent",
+  "start_time": "2025-09-06T20:53:34.104053",
+  "start_timestamp": 1757163214.104055,
+  "input_data": {
+    "user_query": "分析嘉友国际",
+    "stock_code": null,
+    "company_name": "嘉友国际",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2025-09-06T20:55:55.841100",
+  "end_timestamp": 1757163355.841106,
+  "execution_time_seconds": 141.736670255661,
+  "output_data": {
+    "value_analysis_length": 1291,
+    "analysis_preview": "嘉友国际在2024年的分红信息如下：\n\n1. 第一次分红：\n   - 公告日期：2024-04-18\n   - 股东大会日期：2024-05-16\n   - 除权除息日：2024-06-17\n   - 分红派息日：2024-06-18\n   - 每股税前现金分红：0.5元\n   - 每股税后现金分红：0.45或0.5元（取决于税率）\n   - 方案：每10股转增4股并派发现金红利5元（含税，扣税后4.5或5元）\n\n2. 第二次分红：\n   - 预案公告日期：2024-07-26\n   - 股东大会日期：2024-09-21\n   - 除权除息日：2024-10-31\n   - 分红派息日：2024-11-01\n   - 每股税前现金分红：0.3元\n   - 每股税后现金分红：0.27或0.3元（取决于税率）\n   - 方案：每10股派发现金红利3元（含税，扣税后2.7或3元）\n\n为了计算股息收益率，我们需要使用最新的收盘价。根据我们之前获取的数据，最近的收盘价为12.28元。我们可以用这个价格来估算股息收益率。\n\n对于第一次分红，每股税后现金分红为0.45或0.5元，取平均值0.475",
+    "llm_execution_time": 141.17310500144958,
+    "total_execution_time": 141.736670255661
+  },
+  "success": true,
+  "error": null
+}

@@ -1,0 +1,6 @@
+{
+  "timestamp": "2025-09-06T21:37:49.852043",
+  "report_path": "/Users/wjn/Documents/agent/Finance/Financial-MCP-Agent/reports/error_report_腾讯_20250906_213749.md",
+  "report_length": 516,
+  "report_preview": "\n        # Analysis Report for 腾讯 (Unknown Stock)\n        \n        **Error encountered during report generation**: {'message': '当前模型负载已饱和,请降低并发, 或稍后再试~', 'type': 'rate_limit_error', 'param': '', 'code': '429'}\n        \n        ## Available Analysis Fragments:\n        \n        - Fundamental Analysis: Available\n        - Technical Analysis: Available\n        - Value Analysis: Available\n        - News Analysis: Available\n        \n        Please review the individual analyses directly for more information.\n        "
+}

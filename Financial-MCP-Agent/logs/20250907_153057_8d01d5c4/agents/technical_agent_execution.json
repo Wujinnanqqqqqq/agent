@@ -1,0 +1,32 @@
+{
+  "agent_name": "technical_agent",
+  "start_time": "2025-09-07T15:31:01.074596",
+  "start_timestamp": 1757230261.0745978,
+  "input_data": {
+    "user_query": "分析比亚迪",
+    "stock_code": null,
+    "company_name": "比亚迪",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2025-09-07T15:34:43.887678",
+  "end_timestamp": 1757230483.8876832,
+  "execution_time_seconds": 222.8122169971466,
+  "output_data": {
+    "technical_analysis_length": 1605,
+    "analysis_preview": "### 比亚迪（sz.002594）技术面分析报告  \n（数据周期：2025年3月5日-2025年9月5日，前复权日线数据）\n\n\n#### **一、股票基本信息**  \n| 代码       | 名称   | 上市日期   | 状态   |  \n|------------|--------|------------|--------|  \n| sz.002594  | 比亚迪 | 2011-06-30 | 正常交易 |  \n\n\n#### **二、价格趋势与技术形态**  \n1. **整体趋势**  \n   - 近6个月股价呈现**震荡下行趋势**，从3月5日开盘价360.12元跌至9月5日收盘价337.93元，区间最大跌幅达30.4%（2025年5月23日高点432.74元至7月31日低点330.81元）。  \n   - **技术形态**：7月-8月形成“头肩顶”形态，颈线位350元跌破后加速下行，9月以来在325-345元区间窄幅震荡，尚未出现明确反转信号。  \n\n2. **关键价位**  \n   - **阻力位**：350元（前期颈线位）、370元（8月高点）、400元（6月密集成",
+    "llm_execution_time": 221.8754539489746,
+    "total_execution_time": 222.8122169971466
+  },
+  "success": true,
+  "error": null
+}

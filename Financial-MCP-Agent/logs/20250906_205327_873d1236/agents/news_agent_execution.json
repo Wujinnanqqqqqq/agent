@@ -1,0 +1,32 @@
+{
+  "agent_name": "news_agent",
+  "start_time": "2025-09-06T20:53:34.103205",
+  "start_timestamp": 1757163214.103209,
+  "input_data": {
+    "user_query": "分析嘉友国际",
+    "stock_code": null,
+    "company_name": "嘉友国际",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2025-09-06T20:54:29.596693",
+  "end_timestamp": 1757163269.596698,
+  "execution_time_seconds": 55.49305987358093,
+  "output_data": {
+    "news_analysis_length": 1471,
+    "analysis_preview": "根据提供的新闻爬取结果，我们得到了与嘉友国际相关的五条新闻。不过，情感分析和风险评估模型似乎没有加载成功，因此我将基于每条新闻的内容手动进行情感分析和风险评估。请注意，这些评估是基于有限的信息，并且可能不够全面。\n\n1. **标题**: 嘉友国际物流股份有限公司\n   - **内容摘要**: 描述了嘉友国际作为跨境多式联运综合物流服务提供商的业务范围和服务能力。\n   - **情感分析**: 3（中性）。这条新闻主要是对公司业务的描述，没有明显的情感倾向。\n   - **风险评估**: 1（极低风险）。这篇报道是对公司基本情况的介绍，不涉及任何潜在的风险因素。\n   - **对股价的影响**: 这类信息通常不会直接影响股价，除非投资者认为公司的业务模式有显著的变化或改进。\n   \n2. **标题**: 嘉友国际(603871)_股票价格_行情_走势图—东方财富网\n   - **内容摘要**: 提供了嘉友国际的股票价格、行情及走势图等信息。\n   - **情感分析**: 3（中性）。这是一条关于股票市场数据的新闻，不含情感色彩。\n   - **风险评估**: 1（极低风险）。这类信息属于",
+    "llm_execution_time": 54.94856905937195,
+    "total_execution_time": 55.49305987358093
+  },
+  "success": true,
+  "error": null
+}

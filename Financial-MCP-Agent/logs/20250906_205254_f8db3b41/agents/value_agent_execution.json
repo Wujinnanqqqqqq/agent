@@ -1,0 +1,44 @@
+{
+  "agent_name": "value_agent",
+  "start_time": "2025-09-06T20:52:59.053370",
+  "start_timestamp": 1757163179.053372,
+  "input_data": {
+    "user_query": "分析嘉友国际",
+    "stock_code": null,
+    "company_name": "嘉友国际",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "failed",
+  "end_time": "2025-09-06T20:53:00.525685",
+  "end_timestamp": 1757163180.525694,
+  "execution_time_seconds": 1.4718389511108398,
+  "output_data": {
+    "query": "分析嘉友国际",
+    "current_date": "2025-09-06",
+    "current_date_cn": "2025年09月06日",
+    "current_time": "20:52:58",
+    "current_weekday_cn": "星期六",
+    "current_time_info": "2025年09月06日 (2025-09-06) 星期六 20:52:58",
+    "analysis_timestamp": "2025-09-06T20:52:58.897574",
+    "company_name": "嘉友国际",
+    "technical_analysis_error": "Error in MCP or agent execution: {'code': 'invalid_argument', 'message': \"at '/properties': got array, want object\", 'type': 'invalid_request_error'}",
+    "technical_analysis": "技术分析过程中出现错误: {'code': 'invalid_argument', 'message': \"at '/properties': got array, want object\", 'type': 'invalid_request_error'}",
+    "news_analysis_error": "Error in MCP or agent execution: {'code': 'invalid_argument', 'message': \"at '/properties': got array, want object\", 'type': 'invalid_request_error'}",
+    "news_analysis": "新闻分析过程中出现错误: {'code': 'invalid_argument', 'message': \"at '/properties': got array, want object\", 'type': 'invalid_request_error'}",
+    "fundamental_analysis_error": "Error in MCP or agent execution: {'code': 'invalid_argument', 'message': \"at '/properties': got array, want object\", 'type': 'invalid_request_error'}",
+    "fundamental_analysis": "基本面分析过程中出现错误: {'code': 'invalid_argument', 'message': \"at '/properties': got array, want object\", 'type': 'invalid_request_error'}",
+    "value_analysis_error": "Error in MCP or agent execution: {'code': 'invalid_argument', 'message': \"at '/properties': got array, want object\", 'type': 'invalid_request_error'}",
+    "value_analysis": "估值分析过程中出现错误: {'code': 'invalid_argument', 'message': \"at '/properties': got array, want object\", 'type': 'invalid_request_error'}"
+  },
+  "success": false,
+  "error": "{'code': 'invalid_argument', 'message': \"at '/properties': got array, want object\", 'type': 'invalid_request_error'}"
+}

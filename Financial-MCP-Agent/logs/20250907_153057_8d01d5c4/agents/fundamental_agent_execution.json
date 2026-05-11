@@ -1,0 +1,38 @@
+{
+  "agent_name": "fundamental_agent",
+  "start_time": "2025-09-07T15:31:00.907882",
+  "start_timestamp": 1757230260.9078872,
+  "input_data": {
+    "user_query": "分析比亚迪",
+    "stock_code": null,
+    "company_name": "比亚迪",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "failed",
+  "end_time": "2025-09-07T15:31:01.988321",
+  "end_timestamp": 1757230261.988323,
+  "execution_time_seconds": 1.0796928405761719,
+  "output_data": {
+    "query": "分析比亚迪",
+    "current_date": "2025-09-07",
+    "current_date_cn": "2025年09月07日",
+    "current_time": "15:31:00",
+    "current_weekday_cn": "星期日",
+    "current_time_info": "2025年09月07日 (2025-09-07) 星期日 15:31:00",
+    "analysis_timestamp": "2025-09-07T15:31:00.896975",
+    "company_name": "比亚迪",
+    "fundamental_analysis_error": "Error in MCP or agent execution: name 'aaa' is not defined",
+    "fundamental_analysis": "基本面分析过程中出现错误: name 'aaa' is not defined"
+  },
+  "success": false,
+  "error": "name 'aaa' is not defined"
+}

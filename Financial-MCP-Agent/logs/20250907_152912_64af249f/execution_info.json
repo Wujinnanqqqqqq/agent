@@ -1,0 +1,14 @@
+{
+  "execution_id": "20250907_152912_64af249f",
+  "start_time": "2025-09-07T15:29:12.879517",
+  "start_timestamp": 1757230152.8795168,
+  "environment": {
+    "python_version": "3.10.18 (main, Jun  5 2025, 08:37:47) [Clang 14.0.6 ]",
+    "working_directory": "/Users/wjn/Documents/agent/Finance/Financial-MCP-Agent",
+    "environment_variables": {
+      "OPENAI_COMPATIBLE_MODEL": "qwen3-235b-a22b",
+      "OPENAI_COMPATIBLE_BASE_URL": "https://api.zhizengzeng.com/v1",
+      "OPENAI_COMPATIBLE_API_KEY": "***"
+    }
+  }
+}

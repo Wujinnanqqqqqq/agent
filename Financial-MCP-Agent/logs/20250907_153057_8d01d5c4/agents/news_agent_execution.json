@@ -1,0 +1,32 @@
+{
+  "agent_name": "news_agent",
+  "start_time": "2025-09-07T15:31:01.074145",
+  "start_timestamp": 1757230261.0741482,
+  "input_data": {
+    "user_query": "分析比亚迪",
+    "stock_code": null,
+    "company_name": "比亚迪",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2025-09-07T15:34:39.514173",
+  "end_timestamp": 1757230479.5141819,
+  "execution_time_seconds": 218.4390468597412,
+  "output_data": {
+    "news_analysis_length": 2374,
+    "analysis_preview": "根据现有信息，已获取比亚迪2025年8-9月的核心动态，包括产销数据、技术突破、海外扩张及新车型规划。尽管部分新闻内容存在重复或细节不足，且工具未提供情感/风险分析结果，但关键信息已覆盖用户需求框架。继续调用工具可能无法获得有效增量数据，因此基于现有信息进行整合分析。\n\n### 比亚迪新闻分析报告（2025年8-9月）\n\n#### **一、核心新闻摘要**\n1. **产销表现**  \n   - **8月销量37.36万辆**，同比微增0.15%，其中纯电动车型销量同比增长39.44%，插混车型增长8.43%。  \n   - 1-8月累计销量286.4万辆，同比增长23%，动力电池装机量累计180.05GWh，全球市场份额持续领先。  \n\n2. **技术突破**  \n   - **固态电池进展**：2025年专利布局显示能量密度达450Wh/kg，计划2027年量产装车，2025年车型暂未搭载。  \n   - **智能化战略**：启动“智驾平权”，L2级智驾系统规模化部署，2025年30%车型配备高速NOA功能。  \n\n3. **海外扩张**  \n   - 前7月海外销量55万辆，同比增",
+    "llm_execution_time": 217.51947116851807,
+    "total_execution_time": 218.4390468597412
+  },
+  "success": true,
+  "error": null
+}

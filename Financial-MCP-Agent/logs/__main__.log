@@ -1,0 +1,92 @@
+2025-09-06 20:52:54 - __main__ - INFO - Environment Variables Loaded:
+2025-09-06 20:52:54 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: qwen3-235b-a22b
+2025-09-06 20:52:54 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-06 20:52:54 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-06 20:52:54 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20250906_205254_f8db3b41
+2025-09-06 20:52:58 - __main__ - INFO - 从查询中提取 - 公司名称: 嘉友国际, 股票代码: None
+2025-09-06 20:52:58 - __main__ - INFO - 当前时间: 2025年09月06日 (2025-09-06) 星期六 20:52:58
+2025-09-06 20:52:58 - __main__ - INFO - Starting financial analysis workflow for query: '分析嘉友国际'
+2025-09-06 20:53:27 - __main__ - INFO - Environment Variables Loaded:
+2025-09-06 20:53:27 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: qwen-max-longcontext
+2025-09-06 20:53:27 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-06 20:53:27 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-06 20:53:27 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20250906_205327_873d1236
+2025-09-06 20:53:33 - __main__ - INFO - 从查询中提取 - 公司名称: 嘉友国际, 股票代码: None
+2025-09-06 20:53:33 - __main__ - INFO - 当前时间: 2025年09月06日 (2025-09-06) 星期六 20:53:33
+2025-09-06 20:53:33 - __main__ - INFO - Starting financial analysis workflow for query: '分析嘉友国际'
+2025-09-06 20:57:37 - __main__ - INFO - Environment Variables Loaded:
+2025-09-06 20:57:37 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: qwen-max-longcontext
+2025-09-06 20:57:37 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-06 20:57:37 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-06 20:57:37 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20250906_205737_0363dc35
+2025-09-06 20:59:35 - __main__ - INFO - Workflow execution completed successfully
+2025-09-06 20:59:35 - __main__ - INFO - Report saved to: /Users/wjn/Documents/agent/Finance/Financial-MCP-Agent/reports/report_嘉友国际_20250906_205935.md
+2025-09-06 21:21:48 - __main__ - INFO - Environment Variables Loaded:
+2025-09-06 21:21:48 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: qwen3-235b-a22b
+2025-09-06 21:21:48 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-06 21:21:48 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-06 21:21:48 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20250906_212148_6836298c
+2025-09-06 21:22:00 - __main__ - INFO - 从查询中提取 - 公司名称: 嘉友国际, 股票代码: None
+2025-09-06 21:22:00 - __main__ - INFO - 当前时间: 2025年09月06日 (2025-09-06) 星期六 21:22:00
+2025-09-06 21:22:00 - __main__ - INFO - Starting financial analysis workflow for query: '分析嘉友国际'
+2025-09-06 21:23:01 - __main__ - INFO - Workflow execution completed successfully
+2025-09-06 21:23:01 - __main__ - INFO - Report saved to: /Users/wjn/Documents/agent/Finance/Financial-MCP-Agent/reports/report_嘉友国际_20250906_212301.md
+2025-09-06 21:34:02 - __main__ - INFO - Environment Variables Loaded:
+2025-09-06 21:34:02 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: qwen3-235b-a22b
+2025-09-06 21:34:02 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-06 21:34:02 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-06 21:34:02 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20250906_213402_cb997530
+2025-09-06 21:35:47 - __main__ - INFO - Environment Variables Loaded:
+2025-09-06 21:35:47 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: qwen3-235b-a22b
+2025-09-06 21:35:47 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-06 21:35:47 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-06 21:35:47 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20250906_213547_aec1f979
+2025-09-06 21:36:46 - __main__ - INFO - Environment Variables Loaded:
+2025-09-06 21:36:46 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: qwen1.5-110b-chat
+2025-09-06 21:36:46 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-06 21:36:46 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-06 21:36:46 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20250906_213646_ff091761
+2025-09-06 21:36:54 - __main__ - INFO - 从查询中提取 - 公司名称: 腾讯, 股票代码: None
+2025-09-06 21:36:54 - __main__ - INFO - 当前时间: 2025年09月06日 (2025-09-06) 星期六 21:36:54
+2025-09-06 21:36:54 - __main__ - INFO - Starting financial analysis workflow for query: '分析腾讯'
+2025-09-06 21:37:49 - __main__ - INFO - Workflow execution completed successfully
+2025-09-06 21:37:49 - __main__ - INFO - Report saved to: /Users/wjn/Documents/agent/Finance/Financial-MCP-Agent/reports/error_report_腾讯_20250906_213749.md
+2025-09-06 22:01:42 - __main__ - INFO - Environment Variables Loaded:
+2025-09-06 22:01:42 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: qwen1.5-110b-chat
+2025-09-06 22:01:42 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-06 22:01:42 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-06 22:01:42 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20250906_220142_0bc5eafc
+2025-09-06 22:01:55 - __main__ - INFO - 从查询中提取 - 公司名称: 嘉友国际, 股票代码: None
+2025-09-06 22:01:55 - __main__ - INFO - 当前时间: 2025年09月06日 (2025-09-06) 星期六 22:01:55
+2025-09-06 22:01:55 - __main__ - INFO - Starting financial analysis workflow for query: '分析嘉友国际'
+2025-09-06 22:05:55 - __main__ - INFO - Environment Variables Loaded:
+2025-09-06 22:05:55 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: qwen3-235b-a22b
+2025-09-06 22:05:55 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-06 22:05:55 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-06 22:05:55 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20250906_220555_8b32064b
+2025-09-06 22:06:05 - __main__ - INFO - 从查询中提取 - 公司名称: 嘉友国际, 股票代码: None
+2025-09-06 22:06:05 - __main__ - INFO - 当前时间: 2025年09月06日 (2025-09-06) 星期六 22:06:05
+2025-09-06 22:06:05 - __main__ - INFO - Starting financial analysis workflow for query: '分析嘉友国际'
+2025-09-07 15:29:12 - __main__ - INFO - Environment Variables Loaded:
+2025-09-07 15:29:12 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: qwen3-235b-a22b
+2025-09-07 15:29:12 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-07 15:29:12 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-07 15:29:12 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20250907_152912_64af249f
+2025-09-07 15:30:56 - __main__ - INFO - Environment Variables Loaded:
+2025-09-07 15:30:56 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: doubao-seed-1.6
+2025-09-07 15:30:56 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-07 15:30:56 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-07 15:30:57 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20250907_153057_8d01d5c4
+2025-09-07 15:31:00 - __main__ - INFO - 从查询中提取 - 公司名称: 比亚迪, 股票代码: None
+2025-09-07 15:31:00 - __main__ - INFO - 当前时间: 2025年09月07日 (2025-09-07) 星期日 15:31:00
+2025-09-07 15:31:00 - __main__ - INFO - Starting financial analysis workflow for query: '分析比亚迪'
+2025-09-15 16:34:26 - __main__ - INFO - Environment Variables Loaded:
+2025-09-15 16:34:26 - __main__ - INFO -   OPENAI_COMPATIBLE_MODEL: doubao-seed-1.6
+2025-09-15 16:34:26 - __main__ - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-15 16:34:26 - __main__ - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-15 16:34:26 - __main__ - INFO - ✓ 执行日志系统已初始化，日志目录: logs/20250915_163426_72e67daf
+2025-09-15 16:41:27 - __main__ - INFO - 从查询中提取 - 公司名称: 百度, 股票代码: None
+2025-09-15 16:41:27 - __main__ - INFO - 当前时间: 2025年09月15日 (2025-09-15) 星期一 16:41:27
+2025-09-15 16:41:27 - __main__ - INFO - Starting financial analysis workflow for query: '分析一下百度'
+2025-09-15 16:44:05 - __main__ - INFO - Workflow execution completed successfully
+2025-09-15 16:44:05 - __main__ - INFO - Report saved to: /Users/wjn/Documents/agent/Finance/Financial-MCP-Agent/reports/report_一下百度_20250915_164405.md

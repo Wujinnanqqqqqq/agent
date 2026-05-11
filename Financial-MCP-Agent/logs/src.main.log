@@ -1,0 +1,8 @@
+2025-09-06 21:35:04 - src.main - INFO - Environment Variables Loaded:
+2025-09-06 21:35:04 - src.main - INFO -   OPENAI_COMPATIBLE_MODEL: qwen3-235b-a22b
+2025-09-06 21:35:04 - src.main - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-06 21:35:04 - src.main - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************
+2025-09-06 21:35:23 - src.main - INFO - Environment Variables Loaded:
+2025-09-06 21:35:23 - src.main - INFO -   OPENAI_COMPATIBLE_MODEL: qwen3-235b-a22b
+2025-09-06 21:35:23 - src.main - INFO -   OPENAI_COMPATIBLE_BASE_URL: https://api.zhizengzeng.com/v1
+2025-09-06 21:35:23 - src.main - INFO -   OPENAI_COMPATIBLE_API_KEY: ********************

@@ -1,0 +1,57 @@
+{
+  "execution_id": "20250906_205327_873d1236",
+  "start_time": "2025-09-06T20:53:27.319655",
+  "start_timestamp": 1757163207.319654,
+  "environment": {
+    "python_version": "3.10.18 (main, Jun  5 2025, 08:37:47) [Clang 14.0.6 ]",
+    "working_directory": "/Users/wjn/Documents/agent/Finance/Financial-MCP-Agent",
+    "environment_variables": {
+      "OPENAI_COMPATIBLE_MODEL": "qwen-max-longcontext",
+      "OPENAI_COMPATIBLE_BASE_URL": "https://api.zhizengzeng.com/v1",
+      "OPENAI_COMPATIBLE_API_KEY": "***"
+    }
+  },
+  "end_time": "2025-09-06T20:59:35.928352",
+  "end_timestamp": 1757163575.928064,
+  "total_execution_time_seconds": 368.6084101200104,
+  "success": true,
+  "error": null,
+  "status": "completed",
+  "summary": {
+    "agents_executed": [
+      {
+        "name": "summary_agent",
+        "success": true,
+        "execution_time": 190.94880485534668
+      },
+      {
+        "name": "main",
+        "success": false,
+        "execution_time": 0
+      },
+      {
+        "name": "news_agent",
+        "success": true,
+        "execution_time": 55.49305987358093
+      },
+      {
+        "name": "technical_agent",
+        "success": true,
+        "execution_time": 170.87093210220337
+      },
+      {
+        "name": "fundamental_agent",
+        "success": true,
+        "execution_time": 23.20287322998047
+      },
+      {
+        "name": "value_agent",
+        "success": true,
+        "execution_time": 141.736670255661
+      }
+    ],
+    "llm_interactions_count": 5,
+    "tools_used_count": 0,
+    "total_files_created": 23
+  }
+}

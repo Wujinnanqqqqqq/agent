@@ -1,0 +1,32 @@
+{
+  "agent_name": "news_agent",
+  "start_time": "2025-09-06T21:36:54.493270",
+  "start_timestamp": 1757165814.493273,
+  "input_data": {
+    "user_query": "分析腾讯",
+    "stock_code": null,
+    "company_name": "腾讯",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2025-09-06T21:37:28.114969",
+  "end_timestamp": 1757165848.1149728,
+  "execution_time_seconds": 33.621333837509155,
+  "output_data": {
+    "news_analysis_length": 876,
+    "analysis_preview": "由于工具限制，我们无法直接获取到新闻的情感分析、风险评估以及对股价的直接影响。但我可以根据提供的新闻摘要进行定性的分析和解读：\n\n1. **新闻分析**\n   - **新闻1**: 腾讯在公益、游戏、科技和环保方面有积极动作，包括公益活动、游戏展览、鼓励创新和人工智能在动物保护的应用。这表明腾讯在社会责任和创新领域持续投入，可能对品牌形象有正面影响。\n   - **新闻2-5**: 这些链接指向的可能是腾讯网内部页面或特定服务，没有具体摘要，难以直接分析，但通常腾讯官方新闻倾向于展示公司动态、产品发布或服务更新，可能对特定业务板块有正面影响。\n\n2. **情感分析（假设）**\n   - 新闻1: 4-5分，因为涉及积极的社会贡献和创新，一般会带来正面情绪。\n   - 新闻2-5: 由于信息不足，假设为3分，中性偏正面，因为腾讯网内容通常反映公司正面形象。\n\n3. **风险评估（假设）**\n   - 新闻1: 1-2分，公益活动和技术创新通常风险较低，除非有意外负面反馈。\n   - 新闻2-5: 1-2分，内部新闻或服务介绍通常不涉及重大风险。\n\n4. **对股价的潜在影响**\n   -",
+    "llm_execution_time": 32.71502685546875,
+    "total_execution_time": 33.621333837509155
+  },
+  "success": true,
+  "error": null
+}

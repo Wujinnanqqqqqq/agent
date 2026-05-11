@@ -1,0 +1,32 @@
+{
+  "agent_name": "fundamental_agent",
+  "start_time": "2025-09-15T16:41:27.085103",
+  "start_timestamp": 1757925687.0851111,
+  "input_data": {
+    "user_query": "分析一下百度",
+    "stock_code": null,
+    "company_name": "百度",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2025-09-15T16:41:55.332899",
+  "end_timestamp": 1757925715.332903,
+  "execution_time_seconds": 28.246978044509888,
+  "output_data": {
+    "fundamental_analysis_length": 239,
+    "analysis_preview": "您提供的股票代码“Unknown”不符合Baostock格式要求（应为9位，如sh.600000或sz.000001）。百度（Baidu）主要通过美国存托凭证（ADR）在纳斯达克上市，股票代码为BIDU，**并非中国A股上市公司**，因此无法通过当前工具获取其基本面数据。\n\n若需分析中国A股上市公司的基本面，请提供正确的Baostock格式股票代码（如贵州茅台：sh.600519，宁德时代：sz.300750）。我将基于您提供的正确代码，使用工具完成后续财务数据获取与分析。",
+    "llm_execution_time": 26.87256693840027,
+    "total_execution_time": 28.246978044509888
+  },
+  "success": true,
+  "error": null
+}

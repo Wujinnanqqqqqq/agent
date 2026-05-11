@@ -1,0 +1,32 @@
+{
+  "agent_name": "technical_agent",
+  "start_time": "2025-09-06T20:53:34.103704",
+  "start_timestamp": 1757163214.1037061,
+  "input_data": {
+    "user_query": "分析嘉友国际",
+    "stock_code": null,
+    "company_name": "嘉友国际",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2025-09-06T20:56:24.974883",
+  "end_timestamp": 1757163384.974886,
+  "execution_time_seconds": 170.87093210220337,
+  "output_data": {
+    "technical_analysis_length": 1669,
+    "analysis_preview": "我们已经获取了嘉友国际（股票代码：sh.603871）从2025年3月3日至2025年9月5日的收盘价和成交量数据。接下来，我将基于这些数据计算移动平均线、MACD和RSI等技术指标，并进行分析。\n\n### 移动平均线 (MA)\n- **短期移动平均线（SMA 10天）** 和 **长期移动平均线（LMA 30天）** 将帮助我们识别趋势方向。\n- 当短期均线向上穿越长期均线时，这通常被视为买入信号；反之，则是卖出信号。\n\n### MACD\n- **快速线 (12天EMA)** 减去 **慢速线 (26天EMA)** 得到MACD线。\n- **信号线 (9天EMA)** 是MACD线的平滑值。\n- 当MACD线上穿信号线时，通常视为买入信号；当MACD线下穿信号线时，通常视为卖出信号。\n\n### RSI (相对强弱指数)\n- **RSI周期为14天**，用来衡量股价的超买或超卖状态。\n- RSI高于70通常表示超买，低于30表示超卖。\n\n现在，我将使用Python库来计算这些技术指标并绘制图表。由于这里无法直接运行Python代码，我将描述如何计算这些指标以及它们可能显示的趋势。\n\n#",
+    "llm_execution_time": 170.3032808303833,
+    "total_execution_time": 170.87093210220337
+  },
+  "success": true,
+  "error": null
+}
